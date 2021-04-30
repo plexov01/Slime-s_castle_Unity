@@ -8,6 +8,7 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
+    - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
     - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
@@ -21,10 +22,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -67,11 +66,13 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11542}
+      Script: {instanceID: 592}
     - Class: 114
-      Script: {instanceID: 11672}
+      Script: {instanceID: 11540}
     - Class: 114
-      Script: {instanceID: 11832}
+      Script: {instanceID: 11670}
+    - Class: 114
+      Script: {instanceID: 11830}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -141,7 +142,7 @@ ScriptsOnlyBuild:
     className: ActivationTrack
   - hash:
       serializedVersion: 2
-      Hash: a935af884d99988cabe279de4dda1961
+      Hash: 53aa69a3fef030ecc9684a555251567d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: slime
@@ -237,7 +238,7 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
-      Hash: a22e1b21f3262c2cad60f24df7bb5505
+      Hash: 0e1e0387ea4feb6ed4538b671f0d9d15
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MoveCamera
@@ -604,5 +605,5 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: "C:/Users/\u0421\u0442\u0435\u043F\u0430\u043D/Desktop/22.04.2021-2/Slime's
+  playerPath: "C:/Users/\u0421\u0442\u0435\u043F\u0430\u043D/Desktop/30.04.2021/Slime's
     castle.exe"

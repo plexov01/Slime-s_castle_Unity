@@ -252,7 +252,7 @@ public class slime : MonoBehaviour
                         Anim.SetBool("moveFloor", false);
                         Anim.SetBool("stay", false);
                         Anim.SetBool("Jump", false);
-                        if(!Anim.GetBool("Corner")&&moveVectorSoft.y>0.5&&moveVectorSoft.x>-0.5){
+                        if(!Anim.GetBool("Corner")&&moveVectorSoft.y>0.5&&moveVectorSoft.x>0.5){
                             Anim.SetBool("Corner", true);
                             transform.position += new Vector3(0, 0.05f, 0);
                         }
@@ -278,7 +278,7 @@ public class slime : MonoBehaviour
                         Anim.SetBool("moveFloor", false);
                         Anim.SetBool("stay", false);
                         Anim.SetBool("Jump", false);
-                        if(!Anim.GetBool("Corner")&& moveVectorSoft.y<-0.5&& moveVectorSoft.x > -0.5){
+                        if(!Anim.GetBool("Corner")&& moveVectorSoft.y<-0.5&& moveVectorSoft.x > 0.5){
                             Anim.SetBool("Corner", true);
                             transform.position += new Vector3(0, -0.05f, 0);
                         }
