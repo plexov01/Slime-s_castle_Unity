@@ -485,6 +485,8 @@ public class slime : MonoBehaviour
 
                     }
                     stuckTop =true;
+                    stuckLeft=false;
+                    stuckRight=false;
     
                     if(RigidBody.gravityScale !=-1){
                         GScale = -1;
@@ -534,10 +536,10 @@ public class slime : MonoBehaviour
                         }
                         if (Anim.GetBool("Corner"))
                         {   if(Left){
-                                transform.position += new Vector3(0f, 0.05f, 0);
+                                transform.position += new Vector3(0.1f, 0.0f, 0);
                             }
                             if(Right){
-                                transform.position += new Vector3(0f, 0.05f, 0);
+                                transform.position += new Vector3(-0.1f, 0.0f, 0);
                             }
                             // transform.position += new Vector3(0.12f, 0.12f, 0);
                         }
