@@ -19,7 +19,7 @@ public class slime : MonoBehaviour
     public Vector2 moveVector;
     public Vector2 moveVectorSoft;
 
-    public bool faceRight = true;
+    private bool faceRight = true;
 
     public bool stuckLeft = false; //Прилип к левой стене
     public bool stuckRight = false; //Прилип к правой стене
@@ -32,11 +32,13 @@ public class slime : MonoBehaviour
     public bool letJump=true;
 
     public float RotZ = 0.0f;
-    public int GScale=1;
+    private int GScale=1;
     public int scaleY=1;
 
     // Переменные для правильной смены анимаций
     public bool moveFloor;
+
+    [SerializeField]private AudioSource Jumping;
 
 
 
@@ -168,7 +170,7 @@ public class slime : MonoBehaviour
         moveVectorSoft.y = Input.GetAxis("Vertical");
 
         // moveVector.x = -1;
-        // moveVectorSoft.x = 1;        
+        // moveVectorSoft.x = -1;        
         // moveVector.y = 1;
         // moveVectorSoft.y = 1;
 
@@ -379,11 +381,11 @@ public class slime : MonoBehaviour
                     if(Anim.GetBool("stay")){
                         if (onGround)
                         {
-                            transform.position += new Vector3(-0.12f, 0.1f, 0);
+                            transform.position += new Vector3(-0.12f, 0.11f, 0);
                         }
                         if (Top)
                         {
-                            transform.position += new Vector3(-0.12f, -0.1f, 0);
+                            transform.position += new Vector3(-0.12f, -0.11f, 0);
                         }
                         
                     }
@@ -473,6 +475,8 @@ public class slime : MonoBehaviour
                 // moveVector.x * speed, RigidBody.velocity.y
             }
             
+        } else{
+            stuckLeft=false;
         }
 
 
@@ -485,6 +489,7 @@ public class slime : MonoBehaviour
 
                     }
                     stuckTop =true;
+                    
     
                     if(RigidBody.gravityScale !=-1){
                         GScale = -1;
@@ -503,44 +508,44 @@ public class slime : MonoBehaviour
                     {
                         RotZ = 0;
                         // print(Anim.GetBool("Jump"));
-                        if (Anim.GetBool("moveFloor"))
-                        {
-                            if (Left)
-                            {
-                                // transform.position += new Vector3(-0.12f, 0.11f, 0);
-                                transform.position += new Vector3(0.15f, 0.15f, 0);
-                                }
-                            if (Right)
-                            {
-                                transform.position += new Vector3(-0.12f, 0.11f, 0);
-                            }
-                        }
-                        if (Anim.GetBool("stay"))
-                            {
-                            if (Left)
-                            {
-                                transform.position += new Vector3(0.12f, 0.11f, 0);
-                            }
-                            if (Right)
-                            {
-                                transform.position += new Vector3(-0.12f, 0.11f, 0);
-                            }
+                        // if (Anim.GetBool("moveFloor"))
+                        // {
+                        //     if (Left)
+                        //     {
+                        //         // transform.position += new Vector3(-0.12f, 0.11f, 0);
+                        //         transform.position += new Vector3(0.12f, 0f, 0);
+                        //         }
+                        //     if (Right)
+                        //     {
+                        //         transform.position += new Vector3(-0.12f, 0f, 0);
+                        //     }
+                        // }
+                        // if (Anim.GetBool("stay"))
+                        //     {
+                        //     if (Left)
+                        //     {
+                        //         transform.position += new Vector3(0.12f, 0.11f, 0);
+                        //     }
+                        //     if (Right)
+                        //     {
+                        //         transform.position += new Vector3(-0.12f, 0.11f, 0);
+                        //     }
 
-                        }
+                        // }
 
-                        if (Anim.GetBool("Jump"))
-                        {
-                            transform.position += new Vector3(0, 0.1f, 0);
-                        }
-                        if (Anim.GetBool("Corner"))
-                        {   if(Left){
-                                transform.position += new Vector3(0f, 0.05f, 0);
-                            }
-                            if(Right){
-                                transform.position += new Vector3(0f, 0.05f, 0);
-                            }
-                            // transform.position += new Vector3(0.12f, 0.12f, 0);
-                        }
+                        // if (Anim.GetBool("Jump"))
+                        // {
+                        //     transform.position += new Vector3(0, 0.1f, 0);
+                        // }
+                        // if (Anim.GetBool("Corner"))
+                        // {   if(Left){
+                        //         transform.position += new Vector3(0.12f, 0.0f, 0);
+                        //     }
+                        //     if(Right){
+                        //         transform.position += new Vector3(-0.12f, 0.0f, 0);
+                        //     }
+                        //     // transform.position += new Vector3(0.12f, 0.12f, 0);
+                        // }
 
                     }
 
@@ -633,12 +638,15 @@ public class slime : MonoBehaviour
         // {
         //     Anim.SetBool("Jump", false);
         // }
-        if (onGround&&!Anim.GetBool("Corner"))
+        if (onGround&&!Anim.GetBool("Corner")&&!stuckLeft && !stuckRight)
         {
             if (Input.GetAxis("Jump") > 0)
             {
                 RigidBody.velocity = new Vector2(moveVector.x, PowerJump);
                 letJump=true;
+                if(!stuckLeft&&!stuckRight){
+                    Jumping.Play();
+                }
             }
         }
 
