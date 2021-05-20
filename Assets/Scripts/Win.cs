@@ -1,16 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Win : MonoBehaviour
 {
-    public Transform slime;
-    private Vector3 StartPos;
+    // public Transform slime;
+    public Animator Anim;
+    // private Vector3 StartPos;
+
 
     void Start()
     {
-        StartPos=slime.transform.position;
-        StartPos.y+=10;
+        // StartPos=new Vector3;
+        // StartPos.y+=10;
     }
 
     // Update is called once per frame
@@ -22,10 +24,13 @@ public class Win : MonoBehaviour
     {
         if (myTrigger.CompareTag("Player"))
         {
-            win();
+            Anim.SetBool("Play",true);
+            // new WaitForSeconds(2.9f);
+            // win();
         }
     }
-    void win(){
-        slime.transform.position=StartPos;
+    public void win(){
+        // slime.transform.position=StartPos;
+        SceneManager.LoadScene("menu");
     }
 }

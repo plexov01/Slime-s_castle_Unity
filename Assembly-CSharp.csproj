@@ -38,9 +38,12 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\ControllerCollider.cs" />
      <Compile Include="Assets\Scripts\Dead.cs" />
+     <Compile Include="Assets\Scripts\MenuControls.cs" />
      <Compile Include="Assets\Scripts\MoveCamera.cs" />
+     <Compile Include="Assets\Scripts\Settings.cs" />
      <Compile Include="Assets\Scripts\Win.cs" />
      <Compile Include="Assets\Scripts\slime.cs" />
+     <Compile Include="Assets\Scripts\slimeLight.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

@@ -8,6 +8,24 @@ TextureImporter:
   - first:
       213: 2911124066697816330
     second: LatticeDoor_1
+  - first:
+      213: 5196567793076567722
+    second: LatticeDoor_2
+  - first:
+      213: 8957873454567493614
+    second: LatticeDoor_3
+  - first:
+      213: -6051476632753440554
+    second: LatticeDoor_4
+  - first:
+      213: -7284689365925176102
+    second: LatticeDoor_5
+  - first:
+      213: 3384897150522968054
+    second: LatticeDoor_6
+  - first:
+      213: -8634748031563929872
+    second: LatticeDoor_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,9 +127,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 50
+        y: 0
         width: 50
-        height: 50
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,10 +147,10 @@ TextureImporter:
       name: LatticeDoor_1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 50
         y: 0
         width: 50
-        height: 50
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,6 +160,132 @@ TextureImporter:
       bones: []
       spriteID: a092d943ae3666820800000000000000
       internalID: 2911124066697816330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LatticeDoor_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 50
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae709d00eaed1840800000000000000
+      internalID: 5196567793076567722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LatticeDoor_3
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 50
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef85623272c05c70800000000000000
+      internalID: 8957873454567493614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LatticeDoor_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 50
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d8772a8016d40ca0800000000000000
+      internalID: -6051476632753440554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LatticeDoor_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 50
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adcd6fc1e9597ea90800000000000000
+      internalID: -7284689365925176102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LatticeDoor_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 50
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f74722460299fe20800000000000000
+      internalID: 3384897150522968054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LatticeDoor_7
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 0
+        width: 50
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f6e0a50a663b2880800000000000000
+      internalID: -8634748031563929872
       vertices: []
       indices: 
       edges: []
