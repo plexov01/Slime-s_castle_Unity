@@ -5,15 +5,19 @@ using UnityEngine;
 public class Dead : MonoBehaviour
 {
     public Transform slime;
+    [SerializeField] private GameObject _Dead;
     private Vector3 StartPos;
+    IEnumerator ShowDeadTime(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        _Dead.SetActive(false);
+    }
 
     void Start()
     {
         StartPos=slime.transform.position;
         
     }
-
-    // Update is called once per frame
     void Update()
     {
 
@@ -23,9 +27,12 @@ public class Dead : MonoBehaviour
         if (myTrigger.CompareTag("Player"))
         {
             dead();
+
         }
     }
     void dead(){
+        _Dead.SetActive(true);
+        StartCoroutine(ShowDeadTime(0.50f));
         slime.transform.position=StartPos;
     }
 }

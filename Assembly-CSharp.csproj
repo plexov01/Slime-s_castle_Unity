@@ -38,8 +38,10 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\ControllerCollider.cs" />
      <Compile Include="Assets\Scripts\Dead.cs" />
+     <Compile Include="Assets\Scripts\HUDController.cs" />
      <Compile Include="Assets\Scripts\MenuControls.cs" />
      <Compile Include="Assets\Scripts\MoveCamera.cs" />
+     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
      <Compile Include="Assets\Scripts\OldDoorOpenCose.cs" />
      <Compile Include="Assets\Scripts\Settings.cs" />
      <Compile Include="Assets\Scripts\Win.cs" />

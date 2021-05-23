@@ -31,6 +31,7 @@ public class Win : MonoBehaviour
     }
     public void win(){
         // slime.transform.position=StartPos;
-        SceneManager.LoadScene("menu");
+        // SceneManager.LoadScene("menu");
+        SceneManager.LoadScene("Level1");
     }
 }
