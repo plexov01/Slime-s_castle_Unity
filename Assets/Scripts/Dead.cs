@@ -9,8 +9,11 @@ public class Dead : MonoBehaviour
     private Vector3 StartPos;
     IEnumerator ShowDeadTime(float waitTime)
     {
+        _Dead.SetActive(true);
         yield return new WaitForSeconds(waitTime);
         _Dead.SetActive(false);
+        
+       // Time.timeScale = 1;
     }
 
     void Start()
@@ -31,8 +34,10 @@ public class Dead : MonoBehaviour
         }
     }
     void dead(){
-        _Dead.SetActive(true);
+        // _Dead.SetActive(true);
+        
         StartCoroutine(ShowDeadTime(0.50f));
+       // Time.timeScale = 0;
         slime.transform.position=StartPos;
     }
 }

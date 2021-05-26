@@ -31,7 +31,7 @@ public class HUDController : MonoBehaviour
     }
     public void MenuPressed()
     {
-        SceneManager.LoadScene("menu");
+        SceneManager.LoadScene("Menu");
         Time.timeScale = 1f;
     }
     public void ContinuePressed()
