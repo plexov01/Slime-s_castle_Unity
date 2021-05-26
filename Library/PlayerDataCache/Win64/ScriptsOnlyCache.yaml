@@ -102,25 +102,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11250}
     - Class: 114
-      Script: {instanceID: 11276}
+      Script: {instanceID: 11274}
     - Class: 114
-      Script: {instanceID: 11556}
+      Script: {instanceID: 11554}
     - Class: 114
-      Script: {instanceID: 11628}
+      Script: {instanceID: 11626}
     - Class: 114
-      Script: {instanceID: 11686}
+      Script: {instanceID: 11684}
     - Class: 114
-      Script: {instanceID: 11854}
+      Script: {instanceID: 11852}
     - Class: 114
-      Script: {instanceID: 11900}
+      Script: {instanceID: 11898}
     - Class: 114
-      Script: {instanceID: 12460}
+      Script: {instanceID: 12314}
     - Class: 114
-      Script: {instanceID: 12470}
+      Script: {instanceID: 12458}
     - Class: 114
-      Script: {instanceID: 13824}
+      Script: {instanceID: 12468}
     - Class: 114
-      Script: {instanceID: 13920}
+      Script: {instanceID: 13820}
+    - Class: 114
+      Script: {instanceID: 13916}
+    - Class: 114
+      Script: {instanceID: 14448}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -195,31 +199,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11250}
     - Class: 114
-      Script: {instanceID: 11276}
+      Script: {instanceID: 11274}
     - Class: 114
-      Script: {instanceID: 11304}
+      Script: {instanceID: 11302}
     - Class: 114
-      Script: {instanceID: 11556}
+      Script: {instanceID: 11554}
     - Class: 114
-      Script: {instanceID: 11628}
+      Script: {instanceID: 11626}
     - Class: 114
-      Script: {instanceID: 11686}
+      Script: {instanceID: 11684}
     - Class: 114
-      Script: {instanceID: 11854}
+      Script: {instanceID: 11852}
     - Class: 114
-      Script: {instanceID: 11900}
+      Script: {instanceID: 11898}
     - Class: 114
-      Script: {instanceID: 12316}
+      Script: {instanceID: 12314}
     - Class: 114
-      Script: {instanceID: 12460}
+      Script: {instanceID: 12458}
     - Class: 114
-      Script: {instanceID: 12470}
+      Script: {instanceID: 12468}
     - Class: 114
-      Script: {instanceID: 13824}
+      Script: {instanceID: 13820}
     - Class: 114
-      Script: {instanceID: 13920}
+      Script: {instanceID: 13916}
     - Class: 114
-      Script: {instanceID: 14450}
+      Script: {instanceID: 14448}
     - Class: 114
       Script: {instanceID: 14504}
     - Class: 115
@@ -270,17 +274,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11250}
     - Class: 114
-      Script: {instanceID: 11276}
+      Script: {instanceID: 11274}
     - Class: 114
-      Script: {instanceID: 11628}
+      Script: {instanceID: 11626}
     - Class: 114
-      Script: {instanceID: 12316}
+      Script: {instanceID: 12314}
     - Class: 114
-      Script: {instanceID: 12420}
+      Script: {instanceID: 12418}
     - Class: 114
-      Script: {instanceID: 13824}
+      Script: {instanceID: 13820}
     - Class: 114
-      Script: {instanceID: 14450}
+      Script: {instanceID: 14448}
     - Class: 114
       Script: {instanceID: 14492}
     - Class: 115
@@ -319,17 +323,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11248}
     - Class: 114
-      Script: {instanceID: 11276}
+      Script: {instanceID: 11274}
     - Class: 114
-      Script: {instanceID: 11628}
+      Script: {instanceID: 11626}
     - Class: 114
-      Script: {instanceID: 12316}
+      Script: {instanceID: 12314}
     - Class: 114
-      Script: {instanceID: 13824}
+      Script: {instanceID: 13820}
     - Class: 114
-      Script: {instanceID: 14450}
+      Script: {instanceID: 14330}
     - Class: 114
-      Script: {instanceID: 19670}
+      Script: {instanceID: 14448}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -889,6 +893,12 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
+      Hash: ce7d0359f8c230f90eca51764a80bdbc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SceneWinController
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -943,6 +953,12 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SlimeData
+  - hash:
+      serializedVersion: 2
       Hash: 7072231382eb3c4871b3dd75ad0227e1
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -965,23 +981,11 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: ce7d0359f8c230f90eca51764a80bdbc
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SceneWinController
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SlimeData
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/LevelTest.unity
   - Assets/Scenes/Level1.unity
   - Assets/Scenes/Win.unity
-  playerPath: "C:/Users/\u0421\u0442\u0435\u043F\u0430\u043D/Desktop/26.05.2021/Slime's
+  playerPath: "C:/Users/\u0421\u0442\u0435\u043F\u0430\u043D/Desktop/26.05.2021-2/Slime's
     castle.exe"
