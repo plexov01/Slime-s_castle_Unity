@@ -18,6 +18,13 @@ public class SceneWinController : MonoBehaviour
         if(levelName=="LevelTest"){
             LoadLevel="Level1";
         }
+        if(levelName=="Level1"){
+            LoadLevel="Level2";
+        }
+        if(levelName=="Level3"){
+            LoadLevel="Level4";
+        }
+
         // for(int i=0;i<SlimeData.FinishedLevelTime.Count;i++){
         //     print(SlimeData.FinishedLevelTime[i]);
         // }
