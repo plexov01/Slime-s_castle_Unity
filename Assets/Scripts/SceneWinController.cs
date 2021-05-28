@@ -56,7 +56,7 @@ public class SceneWinController : MonoBehaviour
     {
         
         // print(Time.timeSinceLevelLoad);
-        if (Input.anyKey == true && Time.timeSinceLevelLoad>2) {
+        if (Input.anyKey == true && Time.timeSinceLevelLoad>1) {
              SceneManager.LoadScene(LoadLevel);
                 // break;
         }
