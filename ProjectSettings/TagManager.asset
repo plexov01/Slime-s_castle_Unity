@@ -4,7 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Platform
+  - BG_MUSIC_VOLUME_SLIDER
+  - BG_MUSIC_VOLUME_TEXT
+  - BG_MUSIC_CREATED
   layers:
   - Default
   - TransparentFX
