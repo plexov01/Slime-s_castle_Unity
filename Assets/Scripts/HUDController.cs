@@ -7,7 +7,7 @@ public class HUDController : MonoBehaviour
 {
     [SerializeField] private GameObject HUD;
     [SerializeField] private GameObject Pause;
-    [SerializeField]private GameObject Dead;
+    [SerializeField] public GameObject Dead;
 
 
     // // Start is called before the first frame update
