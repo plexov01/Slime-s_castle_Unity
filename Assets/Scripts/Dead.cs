@@ -18,6 +18,7 @@ public class Dead : MonoBehaviour
 
     void Start()
     {
+        SlimeData.PointOfResurrect.Add(slime.transform.position);
         StartPos=slime.transform.position;
         
     }
@@ -38,6 +39,6 @@ public class Dead : MonoBehaviour
         
         StartCoroutine(ShowDeadTime(0.50f));
        // Time.timeScale = 0;
-        slime.transform.position=StartPos;
+        slime.transform.position=SlimeData.PointOfResurrect[SlimeData.PointOfResurrect.Count-1];
     }
 }

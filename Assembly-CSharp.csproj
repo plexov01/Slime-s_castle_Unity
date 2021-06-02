@@ -62,7 +62,7 @@
      <Compile Include="Assets\Scripts\HUDController.cs" />
      <Compile Include="Assets\Scripts\MenuController.cs" />
      <Compile Include="Assets\Scripts\MoveCamera.cs" />
-     <Compile Include="Assets\Scripts\OldDoorOpenCose.cs" />
+     <Compile Include="Assets\Scripts\ResurrectStone.cs" />
      <Compile Include="Assets\Scripts\SceneWinController.cs" />
      <Compile Include="Assets\Scripts\Settings.cs" />
      <Compile Include="Assets\Scripts\SlimeData.cs" />

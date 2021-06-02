@@ -7,7 +7,7 @@ public class MenuController: MonoBehaviour{
 
     [SerializeField] private GameObject Main;
     [SerializeField] private GameObject Settings;
-
+    [SerializeField] private string levelName = SlimeData.currentLevel;
 
     void Start()
     {
@@ -33,7 +33,7 @@ public class MenuController: MonoBehaviour{
     }
     public void PlayPressed()
     {
-        SceneManager.LoadScene("LevelTest");
+        SceneManager.LoadScene("Level1");
     }
 
     public void ExitPressed()
