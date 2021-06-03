@@ -59,8 +59,10 @@
      <Compile Include="Assets\Scripts\ControllerCollider.cs" />
      <Compile Include="Assets\Scripts\ControllerMoveSpikedMonster.cs" />
      <Compile Include="Assets\Scripts\Dead.cs" />
+     <Compile Include="Assets\Scripts\Explosion.cs" />
      <Compile Include="Assets\Scripts\HUDController.cs" />
      <Compile Include="Assets\Scripts\MenuController.cs" />
+     <Compile Include="Assets\Scripts\MonsterMove.cs" />
      <Compile Include="Assets\Scripts\MoveCamera.cs" />
      <Compile Include="Assets\Scripts\ResurrectStone.cs" />
      <Compile Include="Assets\Scripts\SceneWinController.cs" />
@@ -68,6 +70,7 @@
      <Compile Include="Assets\Scripts\SlimeData.cs" />
      <Compile Include="Assets\Scripts\SoundVolumeControllerComponent.cs" />
      <Compile Include="Assets\Scripts\Win.cs" />
+     <Compile Include="Assets\Scripts\attack.cs" />
      <Compile Include="Assets\Scripts\slime.cs" />
      <Compile Include="Assets\Scripts\slimeLight.cs" />
  <Reference Include="UnityEngine">

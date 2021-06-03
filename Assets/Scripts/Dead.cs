@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Dead : MonoBehaviour
 {
-    public Transform slime;
+    private GameObject slime;
     private GameObject _Dead;
     private Vector3 StartPos;
     private GameObject HUD;
@@ -20,12 +20,9 @@ public class Dead : MonoBehaviour
 
     void Start()
     {
-        SlimeData.PointOfResurrect.Add(slime.transform.position);
-        StartPos=slime.transform.position;
-
+        slime = GameObject.Find("slime");
         HUD=GameObject.Find("HUD");
         _Dead=HUD.GetComponent<HUDController>().Dead;
-
     }
     void Update()
     {
@@ -36,10 +33,12 @@ public class Dead : MonoBehaviour
         if (myTrigger.CompareTag("Player"))
         {
             dead();
+            print("Dead!");
 
         }
     }
     void dead(){
+        
         StartCoroutine(ShowDeadTime(0.50f));
         slime.transform.position=SlimeData.PointOfResurrect[SlimeData.PointOfResurrect.Count-1];
     }

@@ -5,14 +5,17 @@ ScriptsOnlyBuild:
     - ControllerCollider
     - ControllerMoveSpikedMonster
     - Dead
+    - Explosion
     - HUDController
     - MenuController
+    - MonsterMove
     - MoveCamera
     - ResurrectStone
     - SceneWinController
     - Settings
     - SoundVolumeControllerComponent
     - Win
+    - attack
     - slime
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
@@ -127,17 +130,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12470}
     - Class: 114
+      Script: {instanceID: 13042}
+    - Class: 114
       Script: {instanceID: 13824}
     - Class: 114
       Script: {instanceID: 13922}
     - Class: 114
-      Script: {instanceID: 14454}
+      Script: {instanceID: 14052}
     - Class: 114
-      Script: {instanceID: 14498}
+      Script: {instanceID: 14456}
     - Class: 114
       Script: {instanceID: 14510}
-    - Class: 114
-      Script: {instanceID: 16774}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -230,15 +233,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12470}
     - Class: 114
+      Script: {instanceID: 13042}
+    - Class: 114
       Script: {instanceID: 13824}
     - Class: 114
       Script: {instanceID: 13922}
     - Class: 114
-      Script: {instanceID: 14454}
+      Script: {instanceID: 14052}
+    - Class: 114
+      Script: {instanceID: 14456}
     - Class: 114
       Script: {instanceID: 14510}
     - Class: 114
-      Script: {instanceID: 16774}
+      Script: {instanceID: 16764}
+    - Class: 114
+      Script: {instanceID: 16766}
+    - Class: 114
+      Script: {instanceID: 16768}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -293,9 +304,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13824}
     - Class: 114
-      Script: {instanceID: 14336}
+      Script: {instanceID: 14338}
     - Class: 114
-      Script: {instanceID: 14454}
+      Script: {instanceID: 14456}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -348,17 +359,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12794}
     - Class: 114
-      Script: {instanceID: 13156}
+      Script: {instanceID: 13042}
+    - Class: 114
+      Script: {instanceID: 13158}
     - Class: 114
       Script: {instanceID: 13824}
     - Class: 114
       Script: {instanceID: 13876}
     - Class: 114
-      Script: {instanceID: 14454}
+      Script: {instanceID: 14456}
     - Class: 114
-      Script: {instanceID: 14474}
-    - Class: 114
-      Script: {instanceID: 14498}
+      Script: {instanceID: 14476}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -384,10 +395,10 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
-      Hash: 5f1752ed2092162f016c19510c28a8b9
+      Hash: 7072231382eb3c4871b3dd75ad0227e1
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
-    className: Button
+    className: Slider
   - hash:
       serializedVersion: 2
       Hash: 4bc4346a71a8df53a6b106f68ef3a190
@@ -744,6 +755,12 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
+      Hash: 5f1752ed2092162f016c19510c28a8b9
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Button
+  - hash:
+      serializedVersion: 2
       Hash: f84d945e5e1ca985698660fc26e9657f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -882,7 +899,7 @@ ScriptsOnlyBuild:
     className: TintTextureGenerator
   - hash:
       serializedVersion: 2
-      Hash: f352ee3f6c2011371303f7c20133a18d
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Dead
@@ -892,6 +909,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.Tilemap.Extras.dll
     namespaceName: UnityEngine.Tilemaps
     className: TerrainTile
+  - hash:
+      serializedVersion: 2
+      Hash: e42b42ccd1cd891714c4a55f05a56f70
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ResurrectStone
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -996,12 +1019,6 @@ ScriptsOnlyBuild:
     className: SlimeData
   - hash:
       serializedVersion: 2
-      Hash: 7072231382eb3c4871b3dd75ad0227e1
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Slider
-  - hash:
-      serializedVersion: 2
       Hash: 494aa7e772795c6a275d0ce0560013c7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1020,15 +1037,27 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: e42b42ccd1cd891714c4a55f05a56f70
+      Hash: 67a33d41de4402efe0ac3c1799b77396
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: ResurrectStone
+    className: attack
+  - hash:
+      serializedVersion: 2
+      Hash: db3ad52629772c85ff11ad0bad7ab4b3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MonsterMove
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Explosion
   platform: 19
   scenePathNames:
   - Assets/Scenes/menu.unity
   - Assets/Scenes/Level1.unity
   - Assets/Scenes/Level2.unity
   - Assets/Scenes/Win.unity
-  playerPath: "C:/Users/\u0421\u0442\u0435\u043F\u0430\u043D/Desktop/02.06.2021/Slime's
+  playerPath: "C:/Users/\u0421\u0442\u0435\u043F\u0430\u043D/Desktop/03.06.2021/Slime's
     castle.exe"

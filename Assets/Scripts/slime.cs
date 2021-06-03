@@ -48,6 +48,7 @@ public class slime : MonoBehaviour
         RigidBody = GetComponent<Rigidbody2D>();
         Anim = GetComponent<Animator>();
         // print(RigidBody);
+        SlimeData.PointOfResurrect.Add(transform.position);
 
     }
 

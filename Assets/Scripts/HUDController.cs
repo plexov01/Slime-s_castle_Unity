@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class HUDController : MonoBehaviour
 {
-    [SerializeField] private GameObject HUD;
-    [SerializeField] private GameObject Pause;
-    [SerializeField] public GameObject Dead;
+    public GameObject HUD;
+    public GameObject Pause;
+    public GameObject Dead;
 
 
     // // Start is called before the first frame update
